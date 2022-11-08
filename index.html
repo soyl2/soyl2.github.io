@@ -2,6 +2,20 @@
 <html>
     <head>
         <style>
+            /* Three image containers (use 25% for four, and 50% for two, etc) */
+            .column {
+            float: left;
+            width: 50%;
+            padding: 5px;
+            }
+
+            /* Clear floats after image containers */
+            .row::after {
+            content: "";
+            clear: both;
+            display: table;
+            }
+
             body.m {
               margin: 150px;
             }
@@ -22,10 +36,19 @@
         </video>
         <p>One of its functions is the ability to map your room, including all the walls, windows and surfaces. This allows you to interact with them in the app, for virtual objects to collide with them and bounce off of them, or paint on them. Any objects hitting a mapped surface will bounce off it, or, in the case of windows and doors, will pass through. This really helps the VR experience feel more immersive, as if it is a part of your room rather than just an empty void with no relations to your surroundings (although an empty sandbox is also possible). </p>
         
-        <p>The physics editor in Figmin XR allows your holograms to be much more realistic, and opens up many more possibilities in how to use them. For example, one of the sample scenes you can load in is one of the Moon orbiting the Earth. You can move both the Earth and the Moon around, and the orbit will change accordingly. It is even possible to knock the Moon out of its orbit and send it careening off into ‘space’. </p> 
         <video width="640" height="360"  controls>
             <source src="planet.mp4" type=video/mp4>
         </video>
+        <p>The physics editor in Figmin XR allows your holograms to be much more realistic, and opens up many more possibilities in how to use them. For example, one of the sample scenes you can load in is one of the Moon orbiting the Earth. You can move both the Earth and the Moon around, and the orbit will change accordingly. It is even possible to knock the Moon out of its orbit and send it careening off into ‘space’. </p> 
+
+        <div class="row">
+            <div class="column">
+              <img src="play1.jpg" alt="Snow" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="play2.jpg" alt="Forest" style="width:100%">
+            </div>
+          </div>
         <p>Another sample scene is a mini golf course that you can play in the comfort of your living room. You are given a club and a ball, and you can use the club to hit the ball around the scene while avoiding obstacles, and get it into the goal. Just like in real mini-golf, if you aren’t careful, you can definitely end up knocking your ball out of the field. Unlike real mini-golf, you really don’t have to go pick it up, and can just summon a new one.</p>  
         <video width="640" height="360" controls>
             <source src="gifs.mp4" type=video/mp4>
